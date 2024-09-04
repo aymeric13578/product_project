@@ -1,10 +1,10 @@
-package se.aymeric.api.core.product;
+package se.aymeric.microservices.api.core.product;
 
 public class Product {
     private final int productId;
     private final String name;
     private final int weight;
-    private final String serviceAddress;
+    private String serviceAddress;
 
     public Product() {
         productId = 0;
@@ -34,5 +34,9 @@ public class Product {
 
     public String getServiceAddress() {
         return serviceAddress;
+    }
+
+    public void setServiceAddress(String serviceAddress) {
+        this.serviceAddress = serviceAddress;
     }
 }
